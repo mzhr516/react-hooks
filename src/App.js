@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { UseStateHook } from "./Componets/hooks/stateHook";
+import { UseStateHook } from "./Componets/hooks/useState hook";
 
 function App() {
   return (

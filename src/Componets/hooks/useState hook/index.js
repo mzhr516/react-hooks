@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Practice2 } from "./Practice2";
-import { Practice3 } from "./practice3";
-import { Practice4 } from "./Practice4";
-import { Practice1 } from "./statePractice1";
+import { Practice2 } from "./example2";
+import { Practice3 } from "./example3";
+import { Practice4 } from "./example4";
+import { Practice1 } from "./example1";
 export const UseStateHook = () => {
   const [counter, setcounter] = useState(0);
   console.log(counter);
