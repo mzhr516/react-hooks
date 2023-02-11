@@ -6,7 +6,7 @@ export const Practice2 = (props) => {
   return (
     <>
       <div>
-        {isShow ? (
+        {isShow && (
           <div
             style={{
               backgroundColor: "blue",
@@ -16,15 +16,15 @@ export const Practice2 = (props) => {
               marginLeft: "40%",
             }}
           ></div>
-        ) : (
-          <button
-            onClick={() => {
-              setIsShow(true);
-            }}
-          >
-            get rectangle
-          </button>
         )}
+
+        <button
+          onClick={() => {
+            isShow ? setIsShow(false) : setIsShow(true);
+          }}
+        >
+          {isShow === false ? "get rectangle" : "hide rectangle"}
+        </button>
       </div>
     </>
   );

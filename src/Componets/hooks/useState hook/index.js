@@ -3,6 +3,9 @@ import { Practice2 } from "./example2";
 import { Practice3 } from "./example3";
 import { Practice4 } from "./example4";
 import { Practice1 } from "./example1";
+import { Practice5 } from "./example5";
+import { Practice6 } from "./example6";
+import { Practice7 } from "./example7";
 export const UseStateHook = () => {
   const [counter, setcounter] = useState(0);
   console.log(counter);
@@ -37,6 +40,12 @@ export const UseStateHook = () => {
       <Practice3 />
       <hr />
       <Practice4 />
+      <hr />
+      <Practice5 />
+      <hr />
+      <Practice6 />
+      <hr />
+      <Practice7 />
     </div>
   );
 };
