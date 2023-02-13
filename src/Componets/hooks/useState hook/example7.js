@@ -57,7 +57,7 @@ export const Practice7 = (props) => {
           }
         }}
       >
-        {condition  ?"get register user data":"get unregister user data"}
+        {condition ? "get register user data" : "get unregister user data"}
       </button>
     </div>
   );

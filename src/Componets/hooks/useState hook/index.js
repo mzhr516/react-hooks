@@ -6,9 +6,9 @@ import { Practice1 } from "./example1";
 import { Practice5 } from "./example5";
 import { Practice6 } from "./example6";
 import { Practice7 } from "./example7";
+import { Validation } from "./Validation";
 export const UseStateHook = () => {
   const [counter, setcounter] = useState(0);
-  console.log(counter);
   const increment = () => {
     if (counter < 10) {
       setcounter(counter + 1);
@@ -26,7 +26,7 @@ export const UseStateHook = () => {
 
   return (
     <div>
-      <h1>{counter}</h1>
+      {/* <h1>{counter}</h1>
       <button onClick={increment}>increment</button>
       <button onClick={decrement}>decrement</button>
       <br></br>
@@ -45,7 +45,8 @@ export const UseStateHook = () => {
       <hr />
       <Practice6 />
       <hr />
-      <Practice7 />
+      <Practice7 /> */}
+      <Validation/>
     </div>
   );
 };
