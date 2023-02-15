@@ -7,6 +7,7 @@ import { Practice5 } from "./example5";
 import { Practice6 } from "./example6";
 import { Practice7 } from "./example7";
 import { Validation } from "./Validation";
+import { ObtimizeValidation } from "./obtimizeValidation";
 export const UseStateHook = () => {
   const [counter, setcounter] = useState(0);
   const increment = () => {
@@ -46,7 +47,10 @@ export const UseStateHook = () => {
       <Practice6 />
       <hr />
       <Practice7 /> */}
+      <h1>validation</h1>
       <Validation/>
+      <h1>validation in obtimize way</h1>
+      <ObtimizeValidation/>
     </div>
   );
 };
