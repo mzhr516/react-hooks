@@ -8,6 +8,7 @@ import { Practice6 } from "./example6";
 import { Practice7 } from "./example7";
 import { Validation } from "./Validation";
 import { ObtimizeValidation } from "./obtimizeValidation";
+import { ValidationWithLib } from "./ValidationWithLib";
 export const UseStateHook = () => {
   const [counter, setcounter] = useState(0);
   const increment = () => {
@@ -51,6 +52,8 @@ export const UseStateHook = () => {
       <Validation/>
       <h1>validation in obtimize way</h1>
       <ObtimizeValidation/>
+      <h1>validation with library</h1>
+      <ValidationWithLib/>
     </div>
   );
 };

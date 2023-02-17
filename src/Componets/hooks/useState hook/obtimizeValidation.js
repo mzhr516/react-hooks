@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 
-export const ObtimizeValidation = (props) => {
+export const ObtimizeValidation = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -15,12 +15,16 @@ export const ObtimizeValidation = (props) => {
 
   const [isSubmit, setIsSubmit] = useState(false);
 
-  console.log(formErr);
+  // console.log(formErr);
   const submit = (e) => {
     e.preventDefault();
     validation();
     if (validation()) {
       setIsSubmit(true);
+      setFormData({
+        firstName: "",
+        lastName: "",
+      });
     } else {
       setIsSubmit(false);
     }
@@ -65,6 +69,7 @@ export const ObtimizeValidation = (props) => {
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>fisrt Name</Form.Label>
           <Form.Control
+            value={formData.firstName}
             type="text"
             placeholder="Enter First Name"
             onChange={(e) => {
@@ -76,6 +81,7 @@ export const ObtimizeValidation = (props) => {
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>last Name</Form.Label>
           <Form.Control
+            value={formData.lastName}
             type="text"
             placeholder="Enter Last Name"
             onChange={(e) => {
@@ -83,10 +89,6 @@ export const ObtimizeValidation = (props) => {
             }}
           />
           <p style={{ color: "red" }}>{formErr.lastNameErr}</p>
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>email</Form.Label>
-          <Form.Control type="text" placeholder="Enter email address" />
         </Form.Group>
         <Button variant="primary" type="submit">
           Submit
