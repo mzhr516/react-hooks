@@ -12,12 +12,12 @@ export const ValidationWithLib = () => {
     watch,
   } = useForm({
     reValidateMode: "onSubmit",
-    defaultValues:{firstName:"mazhar",age123:18}
+    defaultValues: { firstName: "mazhar", age123: 18 },
   });
   console.log(formState);
   const submit = (data) => {
     console.log(data);
-    reset()
+    reset();
   };
   return (
     <div>
