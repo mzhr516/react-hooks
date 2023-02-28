@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Table } from "react-bootstrap";
 
-export const EmpTable = ({ employList,deleteEmp }) => {
+export const EmpTable = ({ employList, deleteEmp, updateEmp }) => {
   return (
     <div>
       <h1>read users from hear</h1>
@@ -21,9 +21,14 @@ export const EmpTable = ({ employList,deleteEmp }) => {
                 <td>{value.name}</td>
                 <td>{value.age}</td>
                 <td>
-                  <Button onClick={()=>{
-                    deleteEmp(value.id)
-                  }}>delete</Button> <Button>update</Button>
+                  <Button
+                    onClick={() => {
+                      deleteEmp(value.id);
+                    }}
+                  >
+                    delete
+                  </Button>{" "}
+                  <Button onClick={()=>{updateEmp(value)}}>update</Button>
                 </td>
               </tr>
             );
